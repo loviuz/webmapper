@@ -21,9 +21,10 @@ import PaperDashboard from "./plugins/paperDashboard";
 import "vue-notifyjs/themes/default.css";
 
 Vue.use(PaperDashboard);
+Vue.prototype.$crud_url = 'http://localhost:8082/api.php';
 
 /* eslint-disable no-new */
 new Vue({
-  router,
-  render: h => h(App)
+    router,
+    render: h => h(App)
 }).$mount("#app");
